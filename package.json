@@ -1,9 +1,9 @@
 {
-  "name": "@rehooks/duplex",
-  "version": "1.0.0",
+  "name": "react-use-duplex",
+  "version": "0.1.0",
   "description": "React hook for duplex buttons state",
   "main": "index.js",
-  "repository": "https://github.com/rehooks/duplex",
+  "repository": "https://github.com/Drapegnik/react-use-duplex",
   "author": "Ivan Pazthitnykh <ivan.pazhitnykh@gmail.com>",
   "license": "MIT",
   "publishConfig": {
@@ -20,13 +20,15 @@
   ],
   "scripts": {
     "test": "ava test.js",
+    "test:watch": "npm test -- --watch",
     "example": "parcel example.html"
   },
   "peerDependencies": {
     "react": "^16.7.0-alpha.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "@babel/preset-react": "^7.0.0",
+    "ava": "^1.0.0-rc.1",
     "browser-env": "^3.2.5",
     "parcel": "^1.10.3",
     "prettier": "^1.14.3",
@@ -34,10 +36,5 @@
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-test-renderer": "^16.7.0-alpha.0"
-  },
-  "ava": {
-    "require": [
-      "./test-setup.js"
-    ]
   }
 }
